@@ -1,0 +1,199 @@
+.participation-retailers {
+    padding-bottom: 19px;
+    .wrap {
+        display: flex;
+        padding: 48px 50px;
+    }
+    
+    &__block {
+        width: 50%;
+        &--right {
+            padding-left: 74px;
+            font-size: 14px;
+        }
+    }
+    .main-title {
+        margin-bottom: 57px;
+    }
+    .main-title--grey {
+        margin-bottom: 55px;
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 65px;
+            height: 1px;
+            background-color: #dee6f1;
+            left: -77px;
+            top: 12px;
+        }
+    }
+    &__limit {
+        margin-bottom: 70px;
+    }
+    &__table {
+        display: flex;
+        border: 1px solid #dee6f1;
+    }
+    &__without {
+        width: 50%;
+        border-right: 1px solid #dee6f1;
+        span {
+            font-weight: bold;
+        }
+        p {
+            padding: 30px 26px;
+            &:nth-child(2) {
+                border-bottom: 1px solid #dee6f1;
+            }
+        }
+    }
+    &__with {
+        width: 50%;
+        span {
+            color: $accent;
+            font-family: $title-font;
+        }
+        p {
+            padding: 30px 26px;
+            
+        }
+    }
+}
+.limit__title {
+    text-transform: uppercase;
+    padding: 49px 24px;
+    border-bottom: 1px solid #dee6f1;
+    font-family: $main-title-font;
+    font-weight: 800;
+}
+.limit__about {
+    min-height: 149px;
+    display: flex;
+    align-items: center;
+    &:nth-child(2) {
+        border-bottom: 1px solid #dee6f1;
+    }
+}
+.step {
+    font-family: $main-title-font;
+    text-transform: uppercase;
+    position: relative;
+    &:nth-child(2) {
+        padding-bottom: 122px;
+    } 
+    &:nth-child(3) {
+        &:after {
+            height: 83%;
+        }
+    }
+    &:nth-child(4){
+        padding-bottom: 113px;
+    }
+    &:nth-child(5){
+        &:after {
+            content: none;
+        }
+    }    
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 29px;
+        width: 1px;
+        height: 74%;
+        background-color: #434a53;
+    }
+    &__description {
+        font-family: "Gilroy-Regular", Arial, sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding-left: 94px;
+        margin-right: 73px;
+        max-width: 424px;
+        margin-left: auto;
+        position: relative;
+        p {
+            font-family: $default-font;
+            text-transform: none;
+            margin-top: 13px;
+            font-size: 14px;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            right: -72px;
+            top: -150px;
+            width: 1px;
+            height: 154px;
+            background-color: #dee6f1;
+        }
+    }
+    &__title {
+        font-family: "Gilroy-Regular", Arial, sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-top: 46px;
+        position: relative;
+        &:first-child {
+            margin-top: -76px;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            left: -94px;
+            top: 5px;
+            width: 78px;
+            height: 1px;
+            background-color: #dee6f1;
+        }
+        &:nth-child(2) {
+            &:before {
+                width: 50px;
+                left: -61px
+            }
+        }
+        &:nth-child(1) {
+            &:after {
+                content: "";
+                position: absolute;
+                right: -72px;
+                top: 5px;
+                width: 70%;
+                height: 1px;
+                background-color: #dee6f1;
+            }
+        }
+
+    }
+    &__subtitle {
+        font-size: 10px;
+        margin-top: 9px;
+    }
+    &--choose {
+        position: relative;
+        &:before, 
+        &:after {
+            content: "";
+            position: absolute;
+            width: 1px;
+            right: 22px;
+            background-color: #dee6f1;
+        }
+        &:before {
+            height: 36px;
+            top: -54px;
+        } 
+        &:after {
+            height: 110px;
+            top: 35px
+        }
+    }
+
+}
+.externallink {
+    fill: #9bb0bf;
+    width: 12px;
+    height: 12px;
+}

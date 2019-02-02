@@ -1,0 +1,303 @@
+//header
+.header-overlay {
+    background-color: $main-color07;
+    height: 100%;;
+}
+.block__left {
+    .header-overlay {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: transparent;
+    }
+}
+.logo-color {
+    --st0:#0FA3B1;
+    --st1:new;
+    --st2:#FFFFFF;
+    --st3:none;
+    --st4:#fff;
+}
+
+	
+
+.header {
+    .wrap {
+        display: flex;
+    }
+    background: $main-color url("../img/header-bg.jpg");
+    background-size: cover;
+    color: $white;
+    height: 100vh;
+    min-height: 790px;
+
+    &__title {
+        display: flex;
+    }
+    &__main {
+        width: 86%;
+        padding: 144px 0 144px 35px;
+    }
+    &__info {
+        font-size: 12px;
+        text-align: right;
+        margin-top: 43px;
+        display: flex;
+        justify-content: flex-end;
+        .title {
+            text-transform: initial;
+            font-size: 12px;
+            margin-bottom: 3px;
+        }
+    }
+}
+.marker {
+    width: 26px;
+    height: 26px;
+    margin-left: 11px;
+    fill: $white;
+    &--dark {
+        fill: $main-color;
+        margin-left: 0;
+        margin-right: 19px;
+    }
+}
+.lines {
+    height: 23px;
+    margin: 0 20px;
+    border-left: 2px solid $white;
+    position: relative;
+    &:before, &:after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        border-left: 2px solid $white;
+    }
+    &:before {
+        left: -10px;
+    }
+    &:after {
+        right: -8px;
+    }
+}
+.logo-wrap {
+    width: 100%;
+    margin-bottom: 17px;
+}
+.logo {
+   width: 181px;
+   svg {
+       width: 100%;
+       height: 51px;
+   }
+}
+.header__dates {
+   font-family: $second-font;
+   font-size: 14px;
+   width: 14%;
+   position: relative;
+}
+.dates__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 12px;
+    text-align: center;
+    min-width: 96px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &.active {
+        font-family: $main-title-font;
+        border-radius: 21px;
+        border-color: $white;
+        background-color: $white;
+        color: $main-color;
+        position: relative;
+        margin: 35px 0;
+        .arrow {
+            content: "";
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            border: 2px solid $white;
+            border-top: none;
+            border-right: none;
+            left: 50%;
+            margin-right: -50%;
+            cursor: pointer;
+            &-top {
+                
+                top: -18px;
+
+                transform: translate(-50%, 0) rotate(135deg);
+            }
+            &-bottom {
+                bottom: -18px;
+                transform: translate(-50%, 0) rotate(-45deg);
+            }
+        }
+        
+        
+    }
+    &:nth-child(1) {
+        opacity: 0.1;
+    }
+    &:nth-child(2) {
+        opacity: 0.3;
+    }
+    &:nth-child(4) {
+        opacity: 0.8;
+    }
+    &:nth-child(5) {
+        opacity: 0.7;
+    }
+    &:nth-child(6) {
+        opacity: 0.6;
+    }
+    &:nth-child(7) {
+        opacity: 0.5;
+    }
+    &:nth-child(8) {
+        opacity: 0.4;
+    }
+    &:nth-child(9) {
+        opacity: 0.3;
+    }
+    &:nth-child(10) {
+        opacity: 0.2;
+    }
+    &:nth-child(11) {
+        opacity: 0.1;
+    }
+}
+
+//registration__form
+.registration__title {
+
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    .title {
+        padding: 49px;
+        text-transform: uppercase;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+    }
+    a {
+        color: $white; 
+    }
+}
+.login {
+    padding: 50px;
+    font-family: $second-font;
+    &:hover {
+        background: rgba(255, 255, 255, 0.4);
+    }
+}
+.register {
+    width: 17px;
+    height: 17px;
+    fill: $white;
+    margin-right: 13px;
+}
+.registration__form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 50px;
+    flex-grow: 1;
+    .tabs__caption {
+        display: flex;
+        justify-content: space-between;
+        li {
+            width: 49%;
+            max-width: none;
+        }
+    }
+    label {
+        display: block;
+        color: #7d838a;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-family: $latosb;
+        margin-bottom: 8px
+    }
+    input {
+        width: 100%;
+        padding: 14px;
+        color: $main-color;
+        border-radius: 3px;
+        &:active {
+            border-color: #a0a3a5;
+        }
+            
+    }
+    .intl-tel-input {
+        display: block;
+    }
+}
+//tel
+.iti-flag {
+    background-image: url("../img/flags.png");
+    // border-radius: 50%;
+    // max-width: 11px;
+}
+.country-name {
+    color: $main-color;
+}
+.intl-tel-input .country-list {
+    max-width: 446px;
+    overflow-x: hidden;
+}
+
+.form-line {
+    margin-bottom: 20px;
+}
+.calendar {
+   width: 15px;
+   height: 15px;
+   fill:  $main-color;
+   margin-right: 11px;
+}
+
+.header__choosen {
+    position: relative;
+    .choosen__items {
+        flex-wrap: nowrap;
+        padding-bottom: 5px;
+    }
+    .double-arrows {
+        display: block;
+        content: "";
+        position: absolute;
+        right: -2px;
+        top: 0;
+        width: 133px;
+        height: 29px;
+        background-image: linear-gradient(to left, #d9dadb 0%, rgba(217, 218, 219, 0) 100%);
+    }
+    .double-arrows--wrap {
+        content: "";
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        background: url(../img/icons/fast-forward-double-right-arrows.svg);
+        -webkit-background-size: cover;
+        background-size: cover;
+        right: 7px;
+        top: 8px;
+    }
+    .choosen__item {
+        white-space: nowrap;
+        padding: 6px 39px 5px 18px;
+        line-height: 1;
+    }
+    .scroll::-webkit-scrollbar {
+        height: 4px;
+    }
+} 

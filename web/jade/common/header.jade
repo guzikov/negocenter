@@ -1,0 +1,89 @@
+header.header
+	.header-overlay
+		.wrap
+			.block__left
+				.header-overlay
+					.logo-wrap
+						.logo 
+							svg.logo-color
+								use(xlink:href='img/logo.svg#logo') 
+					.header__dates
+						ul.date__items
+							li.dates__item.none-mob 5.06 - 6.06
+							li.dates__item 5.09 - 6.09
+							li.dates__item.active
+								.arrow.arrow-top
+								svg.calendar
+									use(xlink:href='img/icons/calendar.svg#calendar') 
+								span 6.12
+								.arrow.arrow-bottom
+							li.dates__item 31.01
+							li.dates__item.none-mob 20.02
+							li.dates__item.none-mob 4.04
+							li.dates__item.none-mob 6.06
+							li.dates__item.none-mob 4.07
+							li.dates__item.none-mob 5.09
+							li.dates__item.none-mob 3.10
+							li.dates__item.none-mob 7.11
+
+					.header__main
+						.header__title
+							.subtitle Центр переговоров
+							.lines
+							.main-title Retailer Недвижимость
+						.header__info
+							.header__
+								p.title Event Hall Даниловский
+								p Москва, ул. Дубининская, д.71, стр.5
+							svg.marker
+								use(xlink:href='img/icons/marker.svg#marker') 
+			.block__right.registration
+				.registration__title
+					a(href="#").title 
+						svg.register
+							use(xlink:href='img/icons/register.svg#register') 
+						| Регистрация на переговоры
+					a(href="#").login Вход
+				.registration__form
+					form(action="#")
+						.form-line
+							label(for="name") Имя
+							input(type="text" name="name" id="name")
+						.tabs
+							.form-line
+								ul.tabs__caption
+									li.btn.btn--tabs.active Ищу площади
+									li.btn.btn--tabs Предлагаю площади
+							.form-line
+								label(for="tel") Номер
+								input(type="tel" name="tel" id="tel")
+
+							.form-line
+								label(for="name") Email
+								input(type="email" name="email" id="email")
+							.form-line.header__choosen
+								ul.choosen__items.scroll
+									li.choosen__item Familia
+										span.cross
+									li.choosen__item Обувь для всей семьи
+										span.cross
+									li.choosen__item Ralf Ringer
+										span.cross
+									li.choosen__item Jack Wolfskin
+										span.cross
+									li.choosen__item 34PLAY
+										span.cross
+									li.choosen__item Incanto
+										span.cross
+									li.choosen__item Алеф
+										span.cross
+								.double-arrows
+									.double-arrows--wrap
+							.form-line
+								.tabs__content.active 
+									a(href="#").btn.btn--transparent.header-popup Выбрать свой список ритейлеров
+								.tabs__content 
+									a(href="#").btn.btn--transparent Выбрать операторов торговых площадей
+							.form-line
+								.btn.btn--black Зарегистрироваться
+						

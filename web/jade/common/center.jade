@@ -1,0 +1,51 @@
+section.center
+    .center__video
+        video(poster='img/center-bg.png' autoplay loop muted)
+            //source(src='demo.mp4', type='video/mp4')
+            source(src='video/retailer.webm', type='video/webm')
+            // source(src='demo.ogv', type='video/ogg')
+            object
+                embed(src='video/retailer.webm', type='application/x-shockwave-flash', allowfullscreen='false', allowscriptaccess='always')
+            | Формат не поддерживается
+
+    .header-overlay
+        .wrap
+            .main-title.none-mob Ближайший Центр переговоров
+            .main-title.none-desctop Программа центра переговоров
+            .center__wrap
+                .center__info 
+                    .center__left
+                        svg.marker.marker--dark
+                            use(xlink:href='img/icons/marker.svg#marker')  
+                        .center__name Event Hall Даниловский 
+                        .lines
+                        .center__adress Москва, ул. Дубининская, д.71, стр.5
+                    .center__right
+                        svg.calendar
+                            use(xlink:href='img/icons/calendar.svg#calendar') 
+                        .center__date 
+                            span 6 
+                            span.desctop-untill320 декабря 
+                            span.mob320 .12 
+                            | 2018
+                        .lines
+                        .center__time 
+                            span 9.
+                            | 00 
+                            span - 17.
+                            | 00
+                .center__boxes
+                    .center-box
+                        .center-box__wrap
+                            .center-box__logo
+                                svg.handshake
+                                    use(xlink:href='img/icons/handshake.svg#handshake')
+                            .center-box__title Переговоры
+                            .center-box__descr Заранее спланированные встречи участников по 15 минут.
+                    .center-box
+                        .center-box__wrap
+                            .center-box__logo
+                                svg.congress
+                                    use(xlink:href='img/icons/congress.svg#congress')
+                            .center-box__title Деловая программа
+                            .center-box__descr Выступления спикеров-практиков, готовых делиться реальными кейсами из сферы торговой недвижимости.

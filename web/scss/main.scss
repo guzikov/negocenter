@@ -1,0 +1,258 @@
+
+@import "tools/_normalize.scss";
+@import "vars";
+@import "fonts";
+@import "_mixins/other-mixins";
+@import "libs";
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.1;
+	// letter-spacing: 1px;
+	font-family: $default-font;
+	// overflow-x: hidden;
+	color: $main-color;
+	input, textarea {
+		border: 1px solid #c8cacb;
+		outline: none;
+		&:focus:required:invalid {
+			border-color: red;
+		}
+		&:required:valid {
+			border-color: green;
+		}
+		&:active {
+			border-color: #a0a3a5;
+		}
+	}
+}
+img {
+	width: 100%;
+}
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	&.img-width {
+		width: 100%;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+b, strong {
+	font-weight: bold;
+}
+.wrap {
+	height: 100%;
+	max-width: 1366px;
+	margin: 0 auto;
+	// padding: 50px;
+}
+.block__left {
+	display: flex;
+	flex-wrap: wrap;
+	width: 60%;
+	padding: 44px 33px 35px 50px;
+}
+.block__right {
+	display: flex;
+	flex-direction: column;
+    width: 40%;
+}
+a {
+	text-decoration: none;
+	color: $main-color;
+	-webkit-transition: all.6s ease; 
+	-moz-transition: all.6s ease;
+	-ms-transition: all.6s ease; 
+	-o-transition: all.6s ease; 
+	transition: all.6s ease;
+	outline:none !important;
+	border: none;
+	&:hover {
+		outline:none;
+	};
+	&:active {
+		outline:none;
+		-webkit-transition: all.1s ease; 
+		-moz-transition: all.1s ease;
+		-ms-transition: all.1s ease; 
+		-o-transition: all.1s ease; 
+		transition: all.1s ease;
+	};
+}
+ul,li, p {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+input {
+	background-color: transparent;
+}
+.primary-text {
+	font-family: $second-font;
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 4px;
+}
+.main-title {
+	font-family: $main-title-font;
+	text-transform: uppercase;
+	font-size: 24px;
+	&--grey {
+		color: #b9c2ce;
+	}
+}
+.subtitle {
+	font-family: $second-font;
+	text-transform: uppercase;
+	font-size: 24px;
+}
+
+.title {
+	font-family: $title-font;
+	text-transform: uppercase;
+	font-size: 22px;
+}
+.tabs__content {
+	width: 100%;
+	display: none; /* по умолчанию прячем все блоки */
+}
+.tabs__content.active {
+	display: flex; /* по умолчанию показываем нужный блок */
+}
+.btn {
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 400;
+	font-family: $title-font;
+	padding: 19px;
+	transition: 0.5s;
+	cursor: pointer;
+	background: transparent;
+	text-align: center;
+	text-transform: uppercase;
+	color: $main-color;
+	border: 1px solid $main-color;
+	border-radius: 3px;
+	border-bottom: 5px solid;
+	&:hover {
+		background-color: rgba(255, 255, 255, 0.5);
+	}
+	&--white {
+		background-color: #fff;
+		border: none;
+		&:hover {
+			background-color: $accent;
+			color: $white;
+		}
+	}
+	&--black {
+		border-bottom: 1px solid $main-color;
+		background-color: $main-color;
+		color: #fff;
+		&:hover {
+			color: $main-color;
+		}
+	}
+	&--transparent {
+		background-color: transparent;
+		&:hover {
+			background-color: $main-color;
+			border-color: $main-color;
+			color: $white;
+		}
+	}
+	&--grey {
+		border-color: #a3aab2;
+		color: #a3aab2;
+		min-width: 327px;
+	}
+	&--tabs {
+		text-transform: initial;
+		font-weight: 500;
+		background-color: #caccce;
+		color: #878c93;
+		
+		max-width: 201px;
+		border: none;
+		box-shadow: none;
+		&.active {
+			box-shadow: 2px 7px 20px rgba(67, 74, 83, 0.3);
+			background-color: #7d838a;
+			color: $white;
+			cursor: default;
+		}
+	}
+	
+	
+	
+}
+//scroll
+.scroll::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.scroll::-webkit-scrollbar
+{
+  width: 4px;
+  background-color: #F5F5F5;
+}
+
+.scroll::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: $main-color;
+}
+.none-desctop {
+	display: none;
+}
+.mob320 {
+	display: none;
+}
+.main-title--wrap.display1024 {
+	display: none;
+}
+.display1024 {
+	display: none;
+}
+
+@import "sections/header"; 
+@import "sections/quick-date"; 
+@import "sections/how"; 
+@import "sections/partners"; 
+@import "sections/way"; 
+@import "sections/center"; 
+@import "sections/reviews"; 
+@import "sections/about"; 
+@import "sections/footer"; 
+@import "sections/popup"; 
+
+@import "sections/header-retailers"; 
+@import "sections/participation-retailers"; 
+@import "sections/cost-retailers"; 
+@import "sections/reviews-retailers"; 
+
+@import "media"; // Always at the end
